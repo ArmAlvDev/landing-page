@@ -8,9 +8,8 @@ body {
 }
 
 .first-section { /* .header .container*/
-  height: 30em;
   margin: 0;
-  padding: 0 15% 4%;
+  padding: 0 15% 10%;
   background-color: #1F2937;
   color: white;
   display: flex;
@@ -31,28 +30,33 @@ body {
 }
 
 .first-section .container { /* .content img */
+  flex: auto;
   display: flex;
+  align-items: center;
   gap: 52px;
-  
 }
 
 .first-section .content {
-  
   display: flex;
-  flex-direction: column;
-  
+  flex-flow: column wrap;  
 }
 
 .first-section .title {
   font-size: 48px;
   font-weight: bolder;
   color: #F9FAF8;
+  width: 520px;
 }
 
 .first-section .text,
 li {
   font-size: 18px;
   color: #E5E7EB;
+  margin-bottom: 16px;
+}
+
+.first-section button {
+  border: 1px solid royalblue;
 }
 
 img {
@@ -147,4 +151,7 @@ button {
   border-radius: 8px;
   background: #3882F6;
   color: white;
+  max-width: 8em;
+  font-size: large;
+  font-weight: 900;
 }
